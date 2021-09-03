@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "568899123782",
+    "project_id": "boilertemplate",
+    "storage_bucket": "boilertemplate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568899123782:android:25cfbbadb41b6e661fa847",
+        "android_client_info": {
+          "package_name": "com.azura.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRusAGk8yqdisL2PgZfOhXW6yDHJlMN70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "568899123782-7ku4ano2c6vs61u7jh4ktt3aa4ikjuie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.BoilerTemplate"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568899123782:android:9fc2048e66f5dee41fa847",
+        "android_client_info": {
+          "package_name": "com.boilertemplatev63"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRusAGk8yqdisL2PgZfOhXW6yDHJlMN70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "568899123782-7ku4ano2c6vs61u7jh4ktt3aa4ikjuie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.BoilerTemplate"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568899123782:android:e745435cff21917f1fa847",
+        "android_client_info": {
+          "package_name": "com.jne.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRusAGk8yqdisL2PgZfOhXW6yDHJlMN70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568899123782-mtadhai4gbgpj324pf6rtv4m1birgag7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "568899123782-7ku4ano2c6vs61u7jh4ktt3aa4ikjuie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.BoilerTemplate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
