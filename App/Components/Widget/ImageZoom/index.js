@@ -42,6 +42,7 @@ export default function ImageZoom({ fadeDuration, source, style }) {
                                 height: '80%'
                             }
                         }
+                        resizeMode={'contain'}
                     />
                 </TouchableOpacity>
             </Modal>

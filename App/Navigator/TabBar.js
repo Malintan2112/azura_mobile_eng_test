@@ -56,8 +56,8 @@ export default TabBar = ({ state, descriptors, navigation }) => {
                         });
                     };
                     const icon = () => {
-                        if (index == 0) return 'home';
-                        if (index == 1) return 'person';
+                        if (index == 0) return 'futbol';
+                        if (index == 1) return 'user';
                     }
                     return (
                         <TouchableOpacity
@@ -71,14 +71,13 @@ export default TabBar = ({ state, descriptors, navigation }) => {
                             style={{ justifyContent: "center", alignItems: "center", backgroundColor: 'white', height: 60, width: '50%', paddingTop: 5 }}
                         >
                             <View style={{ width: 20 }}>
-                                <Icon ios={`ios-${icon()}`} android={`md-${icon()}`} style={{ fontSize: 20, color: isFocused ? Styles.Colors.primary : "#666666" }} />
+                                <Icon type="FontAwesome5" name={`${icon()}`} style={{ fontSize: 20, color: isFocused ? Styles.Colors.primary : "#666666" }} />
 
                             </View>
 
-                            <Text style={{ color: isFocused ? '#0065A1' : '#979DA0', fontSize: 12, fontWeight: '900', marginTop: 5 }}>
+                            <Text style={{ color: isFocused ? '#0065A1' : '#979DA0', fontSize: 12, fontWeight: 'bold', marginTop: 5 }}>
                                 {label}
                             </Text>
-
                         </TouchableOpacity>
                     );
                 })}

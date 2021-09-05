@@ -4,8 +4,6 @@ import { fcmService } from 'App/Helpers/FCMService';
 import { localNotificationService } from 'App/Helpers/LocalNotificationService';
 import * as Hooks from 'App/Helpers/Hooks';
 import * as Styles from 'App/Styles';
-import { selectImage } from 'App/Helpers/ImageLoader';
-import { imageLoader } from '../Helpers/ImageLoader';
 const { width, height } = Dimensions.get('window');
 import PushNotification from "react-native-push-notification";
 
@@ -68,8 +66,8 @@ const Splash = () => {
     return (
         <View style={[Styles.Helpers.fullSize, Styles.Helpers.center, { backgroundColor: Styles.Colors.trueWhite, justifyContent: 'space-between', paddingTop: height * 0.4, paddingBottom: 20 }]}>
             <StatusBar translucent backgroundColor={Styles.Colors.primary} />
-            <Image source={Styles.Images.logo} style={{ width: 100, height: 100 }} />
-            <Text style={{ fontSize: 12, color: Styles.Colors.black }}>PT Tiki Jalur Nugraha Ekakurir (JNE)</Text>
+            <Image source={Styles.Images.logo} style={{ width: 100, height: 100,borderRadius:50 }} />
+            <Text style={{ fontSize: 12, color: Styles.Colors.black }}>PT. Insan Membangun Bangsa</Text>
         </View>
     )
 
