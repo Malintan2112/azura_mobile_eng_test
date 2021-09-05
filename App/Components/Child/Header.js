@@ -20,8 +20,8 @@ export default Header = ({ navigation, dir, title }) => {
                     <Icon type="FontAwesome" name="chevron-left" style={localStyles.iconChevronBack} />
                 </View>
                 <View style={localStyles.containerBackRowHalfRight}>
-                    <Text style={{ fontSize: 12, color: Styles.Colors.black, fontWeight: "800",width:'70%' }} numberOfLines={1}>{dir ? dir : 'Search Page'}</Text>
-                    <Text style={{ fontSize: 20, color: Styles.Colors.black, fontWeight: "bold", marginTop: -5 }}>{title}</Text>
+                    <Text style={localStyles.dirText} numberOfLines={1}>{dir ? dir : 'Search Page'}</Text>
+                    <Text style={localStyles.titleText}>{title}</Text>
                 </View>
             </Animatable.View>
         </TouchableOpacity>
@@ -61,5 +61,17 @@ const localStyles = StyleSheet.create({
     containerBackRowHalfRight: {
         width: width * 0.8,
         marginLeft: 10
+    },
+    dirText: {
+        fontSize: 12,
+        color: Styles.Colors.black,
+        fontWeight: "800",
+        width: '70%'
+    },
+    titleText: {
+        fontSize: 20,
+        color: Styles.Colors.black,
+        fontWeight: "bold",
+        marginTop: -5
     }
 })
