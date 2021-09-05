@@ -35,7 +35,7 @@ export default SearchPage = (props) => {
     const { get } = useEzFetch()
 
     //  Fetching Search By Country 
-    const _fetchingRelate = async () => {
+    const _fetchingByCountry = async () => {
         setLoading(true)
         let result = []
         let response = {}
@@ -62,7 +62,7 @@ export default SearchPage = (props) => {
         setLoading(false)
     }
     //  Fetching Search By Teams 
-    const _fetchingWhere = async () => {
+    const _fetchingNameTeam = async () => {
         setLoading(true)
         const response = await get(`searchteams.php?t=${text}`)
         const result = response.data.teams
@@ -71,6 +71,21 @@ export default SearchPage = (props) => {
         }
         setLoading(false)
     }
+
+    useEffect(() => {
+        switch (type) {
+            case 'teams-search':
+                _fetchingNameTeam()
+                break;
+
+            default:
+                if (searchData.length === 0) {
+                    _fetchingByCountry()
+                }
+                break;
+        }
+    }, [text])
+    
     //  On Change Text Input 
     const onChangeText = (value) => {
         let filterSearch = []
@@ -180,19 +195,7 @@ export default SearchPage = (props) => {
         )
     }
 
-    useEffect(() => {
-        switch (type) {
-            case 'teams-search':
-                _fetchingWhere()
-                break;
 
-            default:
-                if (searchData.length === 0) {
-                    _fetchingRelate()
-                }
-                break;
-        }
-    }, [text])
 
     return (
         <View style={localStyles.defaultBackground} >

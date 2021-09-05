@@ -71,32 +71,37 @@ export default DetailPage = ({ navigation, route }) => {
                     </View>
                     <Text style={localStyles.titleText} allowFontScaling={false}>Activity</Text>
                     <View style={{ width: '100%', flexDirection: 'row' }}>
-                        {params.strTwitter != "" && <Icon
-                            onPress={() => { openLink(params.strTwitter) }}
-                            type="FontAwesome5"
-                            name="twitter"
-                            style={[localStyles.icon, { color: Styles.Colors.primary }]} />}
-                        {params.strWebsite != "" && <Icon
-                            onPress={() => { openLink(params.strWebsite) }}
-                            type="FontAwesome5"
-                            name="globe"
-                            style={[localStyles.icon, { color: Styles.Colors.black }]} />}
+                        {params.strTwitter != "" &&
+                            <Icon
+                                onPress={() => { openLink(params.strTwitter) }}
+                                type="FontAwesome5"
+                                name="twitter"
+                                style={[localStyles.icon, { color: Styles.Colors.primary }]} />}
+                        {params.strWebsite != "" &&
+                            <Icon
+                                onPress={() => { openLink(params.strWebsite) }}
+                                type="FontAwesome5"
+                                name="globe"
+                                style={[localStyles.icon, { color: Styles.Colors.black }]} />}
 
-                        {params.strYoutube != "" && <Icon
-                            onPress={() => { openLink(params.strYoutube) }}
-                            type="FontAwesome5"
-                            name="youtube"
-                            style={[localStyles.icon, { color: 'red' }]} />}
-                        {params.strFacebook != "" && <Icon
-                            onPress={() => { openLink(params.strFacebook) }}
-                            type="FontAwesome5"
-                            name="facebook"
-                            style={[localStyles.icon, { color: Styles.Colors.primary }]} />}
-                        {params.strInstagram != "" && <Icon
-                            onPress={() => { openLink(params.strInstagram) }}
-                            type="FontAwesome5"
-                            name="instagram"
-                            style={[localStyles.icon, { color: 'pink' }]} />}
+                        {params.strYoutube != "" &&
+                            <Icon
+                                onPress={() => { openLink(params.strYoutube) }}
+                                type="FontAwesome5"
+                                name="youtube"
+                                style={[localStyles.icon, { color: 'red' }]} />}
+                        {params.strFacebook != "" &&
+                            <Icon
+                                onPress={() => { openLink(params.strFacebook) }}
+                                type="FontAwesome5"
+                                name="facebook"
+                                style={[localStyles.icon, { color: Styles.Colors.primary }]} />}
+                        {params.strInstagram != "" &&
+                            <Icon
+                                onPress={() => { openLink(params.strInstagram) }}
+                                type="FontAwesome5"
+                                name="instagram"
+                                style={[localStyles.icon, { color: 'pink' }]} />}
 
                     </View>
                     {type === 'detail-team' && (<>
