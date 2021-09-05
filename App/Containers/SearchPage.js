@@ -62,7 +62,7 @@ export default SearchPage = (props) => {
         setLoading(false)
     }
     //  Fetching Search By Teams 
-    const _fetchingNameTeam = async () => {
+    const _fetchingByNameTeam = async () => {
         setLoading(true)
         const response = await get(`searchteams.php?t=${text}`)
         const result = response.data.teams
@@ -75,7 +75,7 @@ export default SearchPage = (props) => {
     useEffect(() => {
         switch (type) {
             case 'teams-search':
-                _fetchingNameTeam()
+                _fetchingByNameTeam()
                 break;
 
             default:
@@ -85,7 +85,7 @@ export default SearchPage = (props) => {
                 break;
         }
     }, [text])
-    
+
     //  On Change Text Input 
     const onChangeText = (value) => {
         let filterSearch = []
