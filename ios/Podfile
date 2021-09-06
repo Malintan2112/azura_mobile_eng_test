@@ -17,6 +17,8 @@ target 'AzuraApp' do
 
   pod 'react-native-camera', :path => '../node_modules/react-native-camera'
 
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
   target 'AzuraAppTests' do
     inherit! :complete
     # Pods for testing
