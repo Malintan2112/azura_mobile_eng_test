@@ -1,10 +1,10 @@
 platform :android do
-    desc 'Build the Android application.'
-    lane :build do
-      gradle(task: 'clean', project_dir: 'android/')
-      gradle(task: 'assemble', build_type: 'release', project_dir: 'android/')
-    end
-    desc 'Build and upload to App Center.'
+  desc 'Build the Android application.'
+  lane :build do
+    gradle(task: 'clean', project_dir: 'android/')
+    gradle(task: 'assemble', build_type: 'release', project_dir: 'android/')
+  end
+  desc 'Build and upload to App Center.'
   lane :beta do
   build
   appcenter_upload(
@@ -14,5 +14,5 @@ platform :android do
       apk: "./android/app/build/outputs/apk/release/app-universal-release.apk"
       )
   end
-  end
+end
   
